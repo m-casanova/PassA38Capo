@@ -6,7 +6,7 @@
 Il font può essere utilizzato tramite un unico file in formato WOFF2 con il seguente codice CSS. Ovviamente il percorso del file deve essere adattato alla specifica situazione.
 
     @font-face {
-        font-family: "Pass A38";
+        font-family: "Pass A38 Capo";
         src: url("Pass_A38_capo.woff2") format("woff2");
     }
 
