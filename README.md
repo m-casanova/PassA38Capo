@@ -22,6 +22,10 @@ Il font "Pass A38 Capo" è un esperimento per un capolettera da abbinare a [Pass
 Si è cercato di dare un aspetto tardo medievale ai capolettera, anche aggiungendo animali tratti da [Hortus Sanitatis](https://www.digitale-sammlungen.de/de/view/bsb00027846), 1491 (München, Bayerische Staatsbibliothek, pubblico dominio).
 Il carattere relativo all'asterisco __*__ corrisponde a un gatto.
 
+Come variante __ss02__ sono presenti le sole lettere maiuscole dei capolettera.
+
+![image](images/Pass_A38_capo_9.jpg)
+
 ![image](images/Pass_A38_capo_2.jpg)
 
 ![image](images/Pass_A38_capo_3.jpg)
