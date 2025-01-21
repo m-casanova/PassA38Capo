@@ -1,4 +1,5 @@
 # Pass A38 Capo
+* Versione 1.105: fix minori
 * Versione 1.104: sistemazione di alcuni caratteri
 * Versione 1.101: sistemazione di alcuni caratteri
 * Versione 1.0: versione iniziale
