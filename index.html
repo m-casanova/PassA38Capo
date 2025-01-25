@@ -21,7 +21,7 @@ header > div.info { background: #5a5351; }
 header > div.titolo { background: #918583; }
 header > div > div { width: 1180px; margin: 0px auto; padding:0 }
 header div div p { margin:0;padding:5px 10px; font-size: 14pt }
-header div div h1 { margin:0;padding:20px 10px; font-size: 30px; font-weight: 400; color: #fff }
+header div div h1 { margin:0;padding:30px 10px; font-size: 30px; font-weight: 400; color: #fff }
 
 section { width: 1180px; margin:60px auto 60px; padding:0 }
 article { width: 890px; margin: 0px 0 0px 290; padding:0 }
@@ -39,13 +39,13 @@ a.ref { font-size: 60%; vertical-align: super; font-weight: 700 }
 
 hr { border:0; border-bottom: 1px solid #666; margin: 20px; padding:0 }
 
-.testo { color: #000; width:90%; margin: 20px 10px; border:0; border-bottom: 1px solid #888; font-family:"test2", sans-serif; font-size:96pt; background: #f3f1ea; padding: 4px; }
+.testo { color: #000; width:90%; margin: 20px 10px; border:0; border-bottom: 1px solid #888; font-family:"test2", sans-serif; font-size:96pt; background: #f3f1ea; padding: 4px; text-transform: uppercase; }
 input:focus { outline: none }
 
 table { margin: 20px auto; text-align: center }
 table td, table th { padding: 5px 20px; }
 
-.test { color: #272625; font-family:"test2"; font-size:108pt; line-height: 1em; margin: 20px 10px }
+.test { color: #272625; font-family:"test2"; font-size:108pt; line-height: 1.1em; margin: 20px 10px }
 .ss01 { font-feature-settings: 'ss01'; color: #333 }
 .ss02 { font-feature-settings: 'ss02'; color: #800 }
 
@@ -88,14 +88,14 @@ div.side {width: 249px; margin: 30px 0 0; padding:10px 10px 5px; float:left; bor
 			<p>Utilizzare le barre di scorrimento per testare il font.</p>
 			<input type="text" class="testo" value="A B C D"/>
 			<p><i>Impostazioni:</i> <span id="dati"></span></p>
-			<p><b>wght (200...700):</b> <input id="range_wght" type="range" value="400" min="400" max="700" step="1" oninput="aggiorna('wght', this.value)"></p>
+			<p><b>wght (400...700):</b> <input id="range_wght" type="range" value="400" min="400" max="700" step="1" oninput="aggiorna('wght', this.value)"></p>
 			<p><button onclick="reset()">Reimposta</button></p>
 			<h3>Descrizione</h3>
 			<p>Il font "Pass A38 Capo" è un esperimento per un capolettera da abbinare a <a href="https://github.com/m-casanova/Pass-A38">Pass A38</a>.
 			<p>È derivato da "Titillium Title" dell'Accademia di Belle Arti di Urbino.</p>
 			<p>Come variante <b>ss02</b> sono presenti varianti strette per M e W.</p>
-			<p class="test">A B C D E F G H I J K L M <span class="ss02">M</span> N O P Q R S T U V W <span class="ss02">W</span> X Y Z</p>
-			<h4>Capolettera con animali</h4>
+			<p class="test">A B C D E F G H I J K L M <span class="ss02">M</span> N O P Q R S T U V W <span class="ss02">W</span> X Y Z À Á È É Ì Í Ò Ó Ù Ú Ý</p>
+			<h3>Capolettera con animali</h3>
 			<p>Utilizzando la caratteristica <b>ss01</b> si ha un capolettera monospaziato con animali tratti da <i><a href="https://www.digitale-sammlungen.de/de/view/bsb00027846" target="_blank">Hortus Sanitatis</a></i>, 1491 (München, Bayerische Staatsbibliothek, pubblico dominio). Il carattere relativo all'asterisco * corrisponde a un gatto.</p>
 			<p class="test ss01">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z *</p>
 		</article>
