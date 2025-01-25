@@ -1,4 +1,5 @@
 # Pass A38 Capo
+* Versione 1.204: fix minori e aggiunta di caratteri accentati (À Á È É Ì Í Ò Ó Ù Ú Ý)
 * Versione 1.201: risistemazione con font variabile e spostamente dei capolettera con animali in ss01
 * Versione 1.107: modifica /D /K /M /W
 * Versione 1.105: fix minori
