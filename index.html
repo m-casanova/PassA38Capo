@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 @font-face {
-  font-family:"test"; font-weight: 200 700;
+  font-family:"test"; font-weight: 400 700;
   src:url("/Pass-A38/font/Pass_A38.woff2") format("woff2-variations");
 }
 @font-face {
@@ -34,18 +34,19 @@ h2 { margin:30px 10px;padding:0; font-size: 40px; font-weight: 400; color: #800 
 h3 { margin:20px 10px;padding:0; font-size: 32px; font-weight: 400; color: #800 }
 h4 { margin:20px 10px;padding:0; font-size: 24px; font-weight: 400; color: #800 }
 
-a.bia { color: #fff }
+a.bia { color: #fff; text-decoration: none }
 a.ref { font-size: 60%; vertical-align: super; font-weight: 700 }
 
 hr { border:0; border-bottom: 1px solid #666; margin: 20px; padding:0 }
 
-.testo { color: #000; width:90%; margin: 20px 10px; border: 1px solid #888; font-family:"test2", sans-serif; font-size:48pt; background: #f3f1ea; padding: 4px; }
+.testo { color: #000; width:90%; margin: 20px 10px; border:0; border-bottom: 1px solid #888; font-family:"test2", sans-serif; font-size:96pt; background: #f3f1ea; padding: 4px; }
+input:focus { outline: none }
 
 table { margin: 20px auto; text-align: center }
 table td, table th { padding: 5px 20px; }
 
 .test { color: #272625; font-family:"test2"; font-size:108pt; line-height: 1em; margin: 20px 10px }
-.ss01 { font-feature-settings: 'ss01'; color: #999 }
+.ss01 { font-feature-settings: 'ss01'; color: #333 }
 .ss02 { font-feature-settings: 'ss02'; color: #800 }
 
 footer { padding:0; margin:0; width: 100%; background: #666; color: #fff }
@@ -84,12 +85,19 @@ div.side {width: 249px; margin: 30px 0 0; padding:10px 10px 5px; float:left; bor
 		</div>
 		<article>
 			<h2>Capolettera bizzarro</h2>
+			<p>Utilizzare le barre di scorrimento per testare il font.</p>
+			<input type="text" class="testo" value="A B C D"/>
+			<p><i>Impostazioni:</i> <span id="dati"></span></p>
+			<p><b>wght (200...700):</b> <input id="range_wght" type="range" value="400" min="400" max="700" step="1" oninput="aggiorna('wght', this.value)"></p>
+			<p><button onclick="reset()">Reimposta</button></p>
 			<h3>Descrizione</h3>
 			<p>Il font "Pass A38 Capo" è un esperimento per un capolettera da abbinare a <a href="https://github.com/m-casanova/Pass-A38">Pass A38</a>.
-			<p>È derivato da "Titillium Title" dell'Accademia di Belle Arti di Urbino (conservato come caratteristica <b>ss01</b>).</p>
-			<p>Si è cercato di dare un aspetto tardo medievale ai capolettera, anche aggiungendo animali tratti da <i><a href="https://www.digitale-sammlungen.de/de/view/bsb00027846" target="_blank">Hortus Sanitatis</a></i>, 1491 (München, Bayerische Staatsbibliothek, pubblico dominio). Il carattere relativo all'asterisco * corrisponde a un gatto.</p>
-			<p>Come variante <b>ss02</b> sono presenti le sole lettere maiuscole dei capolettera.</p>
-			<p class="test">A <span class="ss01">A</span> <span class="ss02">A</span> B <span class="ss01">B</span> <span class="ss02">B</span> C <span class="ss01">C</span> <span class="ss02">C</span> D <span class="ss01">D</span> <span class="ss02">D</span> E <span class="ss01">E</span> <span class="ss02">E</span> F <span class="ss01">F</span> <span class="ss02">F</span> G <span class="ss01">G</span> <span class="ss02">G</span> H <span class="ss01">H</span> <span class="ss02">H</span> I <span class="ss01">I</span> <span class="ss02">I</span> J <span class="ss01">J</span> <span class="ss02">J</span> K <span class="ss01">K</span> <span class="ss02">K</span> L <span class="ss01">L</span> <span class="ss02">L</span> M <span class="ss01">M</span> <span class="ss02">M</span> N <span class="ss01">N</span> <span class="ss02">N</span> O <span class="ss01">O</span> <span class="ss02">O</span> P <span class="ss01">P</span> <span class="ss02">P</span> Q <span class="ss01">Q</span> <span class="ss02">Q</span> R <span class="ss01">R</span> <span class="ss02">R</span> S <span class="ss01">S</span> <span class="ss02">S</span> T <span class="ss01">T</span> <span class="ss02">T</span> U <span class="ss01">U</span> <span class="ss02">U</span> V <span class="ss01">V</span> <span class="ss02">V</span> W <span class="ss01">W</span> <span class="ss02">W</span> X <span class="ss01">X</span> <span class="ss02">X</span> Y <span class="ss01">Y</span> <span class="ss02">Y</span> Z <span class="ss01">Z</span> <span class="ss02">Z</span> *</p>
+			<p>È derivato da "Titillium Title" dell'Accademia di Belle Arti di Urbino.</p>
+			<p>Come variante <b>ss02</b> sono presenti varianti strette per M e W.</p>
+			<p class="test">A B C D E F G H I J K L M <span class="ss02">M</span> N O P Q R S T U V W <span class="ss02">W</span> X Y Z</p>
+			<h4>Capolettera con animali</h4>
+			<p>Utilizzando la caratteristica <b>ss01</b> si ha un capolettera monospaziato con animali tratti da <i><a href="https://www.digitale-sammlungen.de/de/view/bsb00027846" target="_blank">Hortus Sanitatis</a></i>, 1491 (München, Bayerische Staatsbibliothek, pubblico dominio). Il carattere relativo all'asterisco * corrisponde a un gatto.</p>
+			<p class="test ss01">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z *</p>
 		</article>
 	</section>
 	<footer>
@@ -97,5 +105,57 @@ div.side {width: 249px; margin: 30px 0 0; padding:10px 10px 5px; float:left; bor
 			<p>&copy; 2025 Michele Casanova
 		</div>
 	</footer>
+<script>
+	var axis = { "wght": 400 }
+	var ital = 'normal';
+
+	function aggiorna2() {
+		let testi = document.querySelectorAll(".testo");
+		if (!testi) {
+			console.error("Elemento .testo non presente");
+			return;
+		}
+
+		let first = true;
+		let settings = "";
+		
+		for (let ax in axis) {
+			if (!first) {
+				settings += ", "
+			}
+			settings += "'" + ax + "' " + axis[ax];
+			first = false;
+		}
+
+		for (let tt of testi) {
+			tt.style.fontVariationSettings = settings;
+			tt.style.fontStyle = ital;
+		}
+
+		document.querySelector("#dati").innerHTML = settings;
+		
+	}
+	
+	function aggiorna(a, b) {
+		axis[a] = b;
+		aggiorna2();
+	}
+
+	function aggiorna_it(a) {
+		if (a == 1) { ital = 'italic'; } else { ital = 'normal'; }
+		aggiorna2();
+	}
+							
+	function reset() {
+		let range = null;
+
+		axis["wght"] = 400;
+		document.querySelector("#range_wght").value = 400;
+
+		aggiorna2();
+	}
+	reset();
+
+</script>
 <body>
 </html>
