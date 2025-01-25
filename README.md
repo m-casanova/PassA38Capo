@@ -20,16 +20,16 @@ Il font può essere utilizzato tramite un unico file in formato WOFF2 con il seg
 
 Il font "Pass A38 Capo" è un esperimento per un capolettera da abbinare a [Pass A38](https://github.com/m-casanova/Pass-A38).
 
-È derivato da _Titillium Title_ dell'Accademia di Belle Arti di Urbino.
+È derivato da _Titillium Title_ dell'Accademia di Belle Arti di Urbino, cercando di dare un aspetto tardo medievale ai capolettera.
 
 ![image](images/Pass_A38_capo_2.jpg)
 
-Si è cercato di dare un aspetto tardo medievale ai capolettera, anche aggiungendo animali tratti da [Hortus Sanitatis](https://www.digitale-sammlungen.de/de/view/bsb00027846), 1491 (München, Bayerische Staatsbibliothek, pubblico dominio).
+Tramite caratteristica __ss01__ sono disponibili i capolettera monospaziati con animali tratti da _[Hortus Sanitatis](https://www.digitale-sammlungen.de/de/view/bsb00027846)_, 1491 (München, Bayerische Staatsbibliothek, pubblico dominio).
 Il carattere relativo all'asterisco __*__ corrisponde a un gatto.
 
 ![image](images/Pass_A38_capo_3.jpg)
 
-Come variante __ss02__ sono presenti varianti per le lettere M e W.
+Tramite caratteristica __ss02__ sono presenti varianti per le lettere M e W.
 
 ![image](images/Pass_A38_capo_4.jpg)
 
