@@ -1,4 +1,5 @@
 # Pass A38 Capo
+* Versione 1.215: modifica alla lettera /D
 * Versione 1.211: modifiche alle lettere /Q e /T
 * Versione 1.206: modifica alla lettera /D
 * Versione 1.204: fix minori e aggiunta di caratteri accentati (À Á È É Ì Í Ò Ó Ù Ú Ý)
